@@ -41,38 +41,38 @@ struct MenuItemView: View {
                     } // switch
                 } // AsyncImage
                 Spacer()
-                    HStack {
-                        Text("\(displayPrice(data.price))")
-                            .font(.system(size: 22, weight: .medium))
-                            .padding([.top], 26)
-                            .padding([.leading])
-                        Spacer()
-                        Button(action: {
-                            
-                        }) {
-                            Rectangle()
-                                .fill(Color.green)
-                                .cornerRadius(12)
-                                .overlay(alignment: .bottomLeading) {
-                                    Rectangle()
-                                        .fill(Color.green)
-                                        .frame(width: 10, height: 10)
-                                }
-                                .overlay(alignment: .topTrailing) {
-                                    Rectangle()
-                                        .fill(Color.green)
-                                        .frame(width: 10, height: 10)
-                                }
-                                .overlay(alignment: .center) {
-                                    Image(systemName: "plus")
-                                        .font(.system(size: 20, weight: .semibold))
-                                        .foregroundColor(Color.white)
-                                } // Overlay
-                        } // Button
-                        .buttonStyle(.plain)
-                        .padding([.leading], 25)
-                        .padding([.top], 10)
-                    } // HStack
+                HStack {
+                    Text("\(displayPrice(data.price))")
+                        .font(.system(size: 22, weight: .medium))
+                        .padding([.top], 26)
+                        .padding([.leading])
+                    Spacer()
+                    Button(action: {
+                        
+                    }) {
+                        Rectangle()
+                            .fill(Color.green)
+                            .cornerRadius(12)
+                            .overlay(alignment: .bottomLeading) {
+                                Rectangle()
+                                    .fill(Color.green)
+                                    .frame(width: 10, height: 10)
+                            }
+                            .overlay(alignment: .topTrailing) {
+                                Rectangle()
+                                    .fill(Color.green)
+                                    .frame(width: 10, height: 10)
+                            }
+                            .overlay(alignment: .center) {
+                                Image(systemName: "plus")
+                                    .font(.system(size: 20, weight: .semibold))
+                                    .foregroundColor(Color.white)
+                            } // Overlay
+                    } // Button
+                    .buttonStyle(.plain)
+                    .padding([.leading], 25)
+                    .padding([.top], 10)
+                } // HStack
             } // VStack
         } // ZStack
         .frame(height: 240)
@@ -87,35 +87,8 @@ struct MenuItemView: View {
     }
 }
 
-struct SearchBar: View {
-    @State private var searchInput: String = ""
-    
-    var body: some View {
-        ZStack {
-            GeometryReader { geometry in
-                HStack {
-                    Text(Image(systemName: "magnifyingglass"))
-                        .frame(width: 50, height: 60)
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(Color.offWhite)
-                        .background(Color.green)
-                    TextField("Search item", text: $searchInput)
-                        .padding([.leading], 5)
-                } // HStack
-                .frame(width: geometry.size.width * 0.95, height: 60)
-                .background(Color.white)
-                .cornerRadius(12)
-                .shadow(radius: 3, x: 0, y: 5)
-                .frame(width: geometry.size.width) // Center in the middle
-            } // GeometryReader
-            .frame(height: 60)
-        } // ZStack
-    }
-}
-
 struct MenuView: View {
     @StateObject var viewModel = ViewModel()
-    @State var searchInput: String = ""
     @State var scrollPosition: CGFloat = 0
     @State var selectedCategory: String = "burgers"
     
@@ -147,11 +120,11 @@ struct MenuView: View {
                             }
                         }
                         .padding([.leading, .trailing])
-                        categorySlider()
+                        CategorySlider()
                             .padding([.bottom], 35)
                         LazyVGrid(columns: columns, spacing: 20, pinnedViews: [.sectionHeaders]) {
                             Section(header: PageHeader()) {
-                                ForEach(Array(viewModel.menuCategories[viewModel.selectedCategory]!.enumerated()), id: \.offset) { index, element in
+                                ForEach(Array(viewModel.menuItems.enumerated()), id: \.offset) { index, element in
                                     MenuItemView(data: element)
                                 }
                             } // Section
@@ -164,7 +137,7 @@ struct MenuView: View {
             } // ZStack
         }
     }
-
+    
     @ViewBuilder
     func PageHeader() -> some View {
         VStack(spacing: 2) {
@@ -174,7 +147,7 @@ struct MenuView: View {
     } // PageHeader
     
     @ViewBuilder
-    func categorySlider() -> some View {
+    func CategorySlider() -> some View {
         GeometryReader { geometry in
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
@@ -182,6 +155,7 @@ struct MenuView: View {
                         Button(action: {
                             withAnimation(.easeInOut) {
                                 viewModel.selectedCategory = element
+                                viewModel.menuItems = viewModel.menuCategories[viewModel.selectedCategory]!
                             }
                         }) {
                             if viewModel.selectedCategory == element {
@@ -206,6 +180,34 @@ struct MenuView: View {
             .frame(width: geometry.size.width)
         } // GeometryReader
     }
+    
+    @ViewBuilder
+    func SearchBar() -> some View {
+        ZStack {
+            GeometryReader { geometry in
+                HStack {
+                    Text(Image(systemName: "magnifyingglass"))
+                        .frame(width: 50, height: 60)
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color.offWhite)
+                        .background(Color.green)
+                    TextField("Search item", text: $viewModel.searchInput)
+                        .padding([.leading], 5)
+                        .onChange(of: viewModel.searchInput.count) { _ in
+                            print(viewModel.menuItems)
+                            viewModel.searchItem()
+                        }
+                } // HStack
+                .frame(width: geometry.size.width * 0.95, height: 60)
+                .background(Color.white)
+                .cornerRadius(12)
+                .shadow(radius: 3, x: 0, y: 5)
+                .frame(width: geometry.size.width) // Center in the middle
+            } // GeometryReader
+            .frame(height: 60)
+        } // ZStack
+    }
+    
 }
 
 struct MenuView_Previews: PreviewProvider {

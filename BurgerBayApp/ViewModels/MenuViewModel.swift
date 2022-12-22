@@ -59,5 +59,23 @@ extension MenuView {
             }
         }
         
+        public func searchItem() {
+            // Menu categories stays the same
+            print(searchInput)
+            if searchInput == "" {
+                // Set search back to original
+                if menuCategories[selectedCategory] == nil {
+                    menuItems = []
+                    return
+                }
+                menuItems = menuCategories[selectedCategory]!
+                return
+            }
+            print("Filtered")
+            menuItems = menuItems.filter { menuItem in
+                return menuItem.name.lowercased().contains(searchInput.lowercased())
+            }
+        }
+        
     }
 }
