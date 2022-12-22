@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD393222295292BC0060D7C7 /* BurgerBayAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD393221295292BC0060D7C7 /* BurgerBayAppApp.swift */; };
+		BD393224295292BC0060D7C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD393223295292BC0060D7C7 /* ContentView.swift */; };
+		BD393226295292BD0060D7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD393225295292BD0060D7C7 /* Assets.xcassets */; };
+		BD393229295292BD0060D7C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD393228295292BD0060D7C7 /* Preview Assets.xcassets */; };
+		BD6CA929295292E000623D6B /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = BD6CA928295292E000623D6B /* menu.json */; };
+		BD6CA92C2952954F00623D6B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA92B2952954F00623D6B /* MenuItem.swift */; };
+		BD6CA92F2952969A00623D6B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA92E2952969A00623D6B /* MenuView.swift */; };
+		BD6CA931295297B900623D6B /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA930295297B900623D6B /* CartView.swift */; };
+		BD6CA93429529A6700623D6B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA93329529A6700623D6B /* ColorExtension.swift */; };
+		BD6CA9372952A6A000623D6B /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA9362952A6A000623D6B /* MenuViewModel.swift */; };
+		BD6CA93B2954085E00623D6B /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA93A2954085E00623D6B /* CartViewModel.swift */; };
+		BD6CA93D295409FD00623D6B /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA93C295409FD00623D6B /* CartItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD39321E295292BC0060D7C7 /* BurgerBayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD393221295292BC0060D7C7 /* BurgerBayAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerBayAppApp.swift; sourceTree = "<group>"; };
+		BD393223295292BC0060D7C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD393225295292BD0060D7C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD393228295292BD0060D7C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD6CA928295292E000623D6B /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		BD6CA92B2952954F00623D6B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		BD6CA92E2952969A00623D6B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BD6CA930295297B900623D6B /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		BD6CA93329529A6700623D6B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BD6CA9362952A6A000623D6B /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		BD6CA93A2954085E00623D6B /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		BD6CA93C295409FD00623D6B /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD39321B295292BC0060D7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD393215295292BC0060D7C7 = {
+			isa = PBXGroup;
+			children = (
+				BD393220295292BC0060D7C7 /* BurgerBayApp */,
+				BD39321F295292BC0060D7C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD39321F295292BC0060D7C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD39321E295292BC0060D7C7 /* BurgerBayApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD393220295292BC0060D7C7 /* BurgerBayApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CA9352952A69200623D6B /* ViewModels */,
+				BD6CA93229529A5C00623D6B /* Extensions */,
+				BD6CA92D2952968B00623D6B /* Views */,
+				BD6CA92A2952954100623D6B /* Models */,
+				BD6CA928295292E000623D6B /* menu.json */,
+				BD393221295292BC0060D7C7 /* BurgerBayAppApp.swift */,
+				BD393223295292BC0060D7C7 /* ContentView.swift */,
+				BD393225295292BD0060D7C7 /* Assets.xcassets */,
+				BD393227295292BD0060D7C7 /* Preview Content */,
+			);
+			path = BurgerBayApp;
+			sourceTree = "<group>";
+		};
+		BD393227295292BD0060D7C7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD393228295292BD0060D7C7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD6CA92A2952954100623D6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CA92B2952954F00623D6B /* MenuItem.swift */,
+				BD6CA93C295409FD00623D6B /* CartItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD6CA92D2952968B00623D6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CA92E2952969A00623D6B /* MenuView.swift */,
+				BD6CA930295297B900623D6B /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD6CA93229529A5C00623D6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CA93329529A6700623D6B /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD6CA9352952A69200623D6B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CA9362952A6A000623D6B /* MenuViewModel.swift */,
+				BD6CA93A2954085E00623D6B /* CartViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD39321D295292BC0060D7C7 /* BurgerBayApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD39322C295292BD0060D7C7 /* Build configuration list for PBXNativeTarget "BurgerBayApp" */;
+			buildPhases = (
+				BD39321A295292BC0060D7C7 /* Sources */,
+				BD39321B295292BC0060D7C7 /* Frameworks */,
+				BD39321C295292BC0060D7C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurgerBayApp;
+			productName = BurgerBayApp;
+			productReference = BD39321E295292BC0060D7C7 /* BurgerBayApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD393216295292BC0060D7C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BD39321D295292BC0060D7C7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BD393219295292BC0060D7C7 /* Build configuration list for PBXProject "BurgerBayApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD393215295292BC0060D7C7;
+			productRefGroup = BD39321F295292BC0060D7C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD39321D295292BC0060D7C7 /* BurgerBayApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD39321C295292BC0060D7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6CA929295292E000623D6B /* menu.json in Resources */,
+				BD393229295292BD0060D7C7 /* Preview Assets.xcassets in Resources */,
+				BD393226295292BD0060D7C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD39321A295292BC0060D7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6CA931295297B900623D6B /* CartView.swift in Sources */,
+				BD6CA9372952A6A000623D6B /* MenuViewModel.swift in Sources */,
+				BD6CA92C2952954F00623D6B /* MenuItem.swift in Sources */,
+				BD6CA92F2952969A00623D6B /* MenuView.swift in Sources */,
+				BD6CA93D295409FD00623D6B /* CartItem.swift in Sources */,
+				BD6CA93B2954085E00623D6B /* CartViewModel.swift in Sources */,
+				BD6CA93429529A6700623D6B /* ColorExtension.swift in Sources */,
+				BD393224295292BC0060D7C7 /* ContentView.swift in Sources */,
+				BD393222295292BC0060D7C7 /* BurgerBayAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BD39322A295292BD0060D7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD39322B295292BD0060D7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD39322D295292BD0060D7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BurgerBayApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HV7TRQD227;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Neal-Archival.BurgerBayApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD39322E295292BD0060D7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BurgerBayApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HV7TRQD227;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Neal-Archival.BurgerBayApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD393219295292BC0060D7C7 /* Build configuration list for PBXProject "BurgerBayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD39322A295292BD0060D7C7 /* Debug */,
+				BD39322B295292BD0060D7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD39322C295292BD0060D7C7 /* Build configuration list for PBXNativeTarget "BurgerBayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD39322D295292BD0060D7C7 /* Debug */,
+				BD39322E295292BD0060D7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD393216295292BC0060D7C7 /* Project object */;
+}

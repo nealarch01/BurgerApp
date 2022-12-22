@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Classic Burger",
+        "description": "A delicious burger with a juicy beef patty, topped with lettuce, tomato, onion, pickles, and ketchup, served on a toasted bun.",
+        "calories": 540,
+        "price": 6.99,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+    },
+    {
+        "name": "Avocado Burger",
+        "description": "A burger with a juicy beef patty, topped with sliced avocado, lettuce, tomato, and mayonnaise, served on a toasted bun.",
+        "calories": 680,
+        "price": 7.99,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1599934991361-b1df3fba4baa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    },
+    {
+        "name": "Black Bean Burger",
+        "description": "A vegan burger made with a black bean patty, topped with lettuce, tomato, onion, pickles, and vegan mayonnaise, served on a toasted bun.",
+        "calories": 400,
+        "price": 7.49,
+        "category": "burgers",
+        "vegan": true,
+        "image_url": "https://sallysbakingaddiction.com/wp-content/uploads/2018/07/best-black-bean-burgers-2.jpg"
+    },
+    {
+        "name": "Grilled Chicken Burger",
+        "description": "A grilled chicken breast topped with lettuce, tomato, and mayonnaise, served on a toasted bun.",
+        "calories": 420,
+        "price": 7.49,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://bakingamoment.com/wp-content/uploads/2022/09/IMG_1083-chicken-sandwich.jpg"
+    },
+    {
+        "name": "Veggie Burger",
+        "description": "A vegan burger made with a vegetable patty, topped with lettuce, tomato, onion, pickles, and vegan mayonnaise, served on a toasted bun.",
+        "calories": 390,
+        "price": 7.49,
+        "category": "burgers",
+        "vegan": true,
+        "image_url": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2019-05-recipe-ultimate-grilled-veggie-burger%2FUltimateVeggieBurgerforGrillingTheKitchn042919_04"
+    },
+    {
+        "name": "Bacon Cheeseburger",
+        "description": "A delicious burger with a juicy beef patty, topped with crispy bacon, melted cheese, lettuce, tomato, and mayonnaise, served on a toasted bun.",
+        "calories": 820,
+        "price": 8.49,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://makeyourmeals.com/wp-content/uploads/2020/05/bacon-cheeseburger-featured-720x540.jpg"
+    },
+    {
+        "name": "Mushroom Swiss Burger",
+        "description": "A burger with a juicy beef patty, topped with sautéed mushrooms and melted Swiss cheese, served on a toasted bun.",
+        "calories": 760,
+        "price": 8.49,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1549611016-3a70d82b5040?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2030&q=80"
+    },
+    {
+        "name": "BBQ Burger",
+        "description": "A burger with a juicy beef patty, topped with BBQ sauce, crispy onion strings, and cheddar cheese, served on a toasted bun.",
+        "calories": 740,
+        "price": 8.49,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://dudethatcookz.com/wp-content/uploads/2020/04/Double_BBQ_Cheddar_Burger14_Hero.jpg"
+    },
+    {
+        "name": "Greek Burger",
+        "description": "A burger with a juicy beef patty, topped with feta cheese, Kalamata olives, red onions, lettuce, and tzatziki sauce, served on a toasted bun.",
+        "calories": 670,
+        "price": 8.49,
+        "category": "burgers",
+        "vegan": false,
+        "image_url": "https://www.lecremedelacrumb.com/wp-content/uploads/2020/05/greek-burgers-5csm-1.jpg"
+    },
+    {
+        "name": "French Fries",
+        "description": "Classic, crispy French fries made with potatoes and deep-fried to perfection.",
+        "calories": 400,
+        "price": 2.99,
+        "category": "sides",
+        "vegan": true,
+        "image_url": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    },
+    {
+        "name": "Onion Rings",
+        "description": "Thinly sliced onions coated in a crispy batter and deep-fried until golden brown.",
+        "calories": 500,
+        "price": 3.49,
+        "category": "sides",
+        "vegan": true,
+        "image_url": "https://images.unsplash.com/photo-1625938146369-adc83368bda7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
+    },
+    {
+        "name": "Mozzarella Sticks",
+        "description": "Breaded mozzarella cheese sticks, deep-fried until golden brown and served with marinara sauce for dipping.",
+        "calories": 550,
+        "price": 3.99,
+        "category": "sides",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+        "name": "Chicken Wings",
+        "description": "Crispy fried chicken wings coated in your choice of buffalo, BBQ, or teriyaki sauce.",
+        "calories": 700,
+        "price": 7.99,
+        "category": "sides",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1608039755401-742074f0548d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+    },
+    {
+        "name": "Mac and Cheese Bites",
+        "description": "Bites of creamy mac and cheese coated in a crispy breadcrumb coating and deep-fried until golden brown.",
+        "calories": 550,
+        "price": 4.99,
+        "category": "sides",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1543339520-51ebace10a0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80"
+    },
+    {
+        "name": "Soda",
+        "description": "A carbonated soft drink in your choice of flavor, served over ice.",
+        "calories": 150,
+        "price": 2.49,
+        "category": "beverages",
+        "vegan": true,
+        "image_url": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    },
+    {
+        "name": "Iced Tea",
+        "description": "A refreshing glass of iced tea, served over ice.",
+        "calories": 50,
+        "price": 2.49,
+        "category": "beverages",
+        "vegan": true,
+        "image_url": "https://images.unsplash.com/photo-1634641135604-94df2bd6d3d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=974&q=80"
+    },
+    {
+        "name": "Lemonade",
+        "description": "A refreshing glass of lemonade made with fresh squeezed lemons and sweetened to taste.",
+        "calories": 100,
+        "price": 2.49,
+        "category": "beverages",
+        "vegan": true,
+        "image_url": "https://images.unsplash.com/photo-1623084918745-700fd8929eee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+        "name": "Coffee",
+        "description": "A hot cup of coffee, served black or with your choice of cream and sugar.",
+        "calories": 5,
+        "price": 2.49,
+        "category": "beverages",
+        "vegan": true,
+        "image_url": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+        "name": "Hot Chocolate",
+        "description": "A rich and creamy hot chocolate, topped with whipped cream and a sprinkle of cocoa powder.",
+        "calories": 250,
+        "price": 2.99,
+        "category": "beverages",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1517578239113-b03992dcdd25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    },
+    {
+        "name": "Strawberry Milkshake",
+        "description": "A creamy strawberry milkshake made with strawberry ice cream and topped with whipped cream and a cherry.",
+        "calories": 600,
+        "price": 5.49,
+        "category": "milkshake",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+    },
+    {
+        "name": "Chocolate Milkshake",
+        "description": "A rich and creamy chocolate milkshake made with chocolate ice cream and topped with whipped cream and a cherry.",
+        "calories": 550,
+        "price": 5.49,
+        "category": "milkshake",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+        "name": "Vanilla Milkshake",
+        "description": "A classic vanilla milkshake made with vanilla ice cream and topped with whipped cream and a cherry.",
+        "calories": 500,
+        "price": 5.49,
+        "category": "milkshake",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1629993470807-33bfa488153b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "name": "Oreo Milkshake",
+        "description": "A creamy Oreo milkshake made with vanilla ice cream, crushed Oreo cookies, and topped with whipped cream and an Oreo cookie.",
+        "calories": 600,
+        "price": 5.99,
+        "category": "milkshake",
+        "vegan": false,
+        "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    }
+]
+
